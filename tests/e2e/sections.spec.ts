@@ -73,6 +73,22 @@ test.describe("Page sections", () => {
     }
   });
 
+  test("media section displays media cards with links", async ({ page }) => {
+    const heading = page.locator("#media h2");
+    await expect(heading).toHaveText("Media & Speaking");
+
+    const cards = page.locator(".media-card");
+    expect(await cards.count()).toBe(3);
+
+    for (const card of await cards.all()) {
+      await expect(card.locator("h3")).toBeVisible();
+      await expect(card.locator("p")).toBeVisible();
+      const link = card.locator("a");
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", /noopener/);
+    }
+  });
+
   test("header social icons are visible with accessible labels", async ({
     page,
   }) => {

@@ -149,6 +149,11 @@ header, are clickable, and lead to the correct destinations.
 - **FR-012b**: The toggle MUST be accessible via keyboard and
   include an appropriate aria-label indicating the action it will
   perform (e.g., "Switch to light mode").
+- **FR-013**: The page MUST include a "Media & Speaking" section
+  after Projects showcasing the owner's external appearances
+  (video case studies, conference talks, written case studies)
+  with a type badge, title, description, and external link for
+  each item.
 
 ### Key Entities
 
@@ -161,6 +166,9 @@ header, are clickable, and lead to the correct destinations.
   (or "Present"), and brief description.
 - **Project**: A showcase item — includes title, brief
   description, and optional link to live demo or source.
+- **Media Item**: A public-facing appearance — includes type
+  (video, talk, case study), title, brief description, and
+  external link to the resource.
 - **Contact Method**: A way to reach the owner — includes type
   (email, social link), value (address, URL), and an associated
   icon displayed in the header.
