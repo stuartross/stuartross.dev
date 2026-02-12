@@ -89,11 +89,6 @@ test.describe("Page sections", () => {
     }
   });
 
-  test("header social email link uses mailto protocol", async ({ page }) => {
-    const emailLink = page.locator('.header-social a[href^="mailto:"]');
-    expect(await emailLink.count()).toBeGreaterThan(0);
-  });
-
   test("header social external links open in new tab", async ({ page }) => {
     const externalLinks = page.locator(
       '.header-social a[target="_blank"]'

@@ -93,11 +93,41 @@ section h2 {
   font-size: var(--text-sm);
 }
 
-/* ── Experience ── */
+/* ── Experience (timeline) ── */
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2xl);
+  gap: 0;
+  position: relative;
+  padding-left: var(--space-xl);
+  border-left: 2px solid var(--color-border);
+}
+
+.experience-entry {
+  position: relative;
+  padding-bottom: var(--space-2xl);
+}
+
+.experience-entry:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline dot */
+.experience-entry::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-xl) - 5px);
+  top: 0.35rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: 2px solid var(--color-bg);
+}
+
+/* Highlight current role */
+.experience-entry:first-child::before {
+  background: var(--color-primary);
 }
 
 .experience-entry h3 {
@@ -364,6 +394,14 @@ body {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-list {
+    padding-left: var(--space-lg);
+  }
+
+  .experience-entry::before {
+    left: calc(-1 * var(--space-lg) - 5px);
   }
 
   .experience-meta {
