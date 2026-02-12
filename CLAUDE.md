@@ -31,6 +31,12 @@ npx playwright test -g "hero displays name"     # Run tests matching a pattern
 - **`src/styles/main.css`** — All component styles (imports tokens and reset).
 - **`tests/e2e/`** — Playwright tests. Dev server starts automatically via `playwright.config.ts` `webServer` config.
 
+## Git Workflow
+
+- **Never commit directly to `main`.** Always create a feature branch for changes.
+- Branch naming: use short, descriptive kebab-case names (e.g. `add-media-section`, `fix-nav-bug`).
+- When specs exist under `specs/`, update them to reflect any new or changed functionality.
+
 ## Code Style
 
 - TypeScript strict mode with `noUnusedLocals` and `noUnusedParameters`
