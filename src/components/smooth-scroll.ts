@@ -13,11 +13,9 @@ export function initSmoothScroll(): void {
 
     e.preventDefault();
 
-    const navHeight =
-      document.getElementById("main-nav")?.offsetHeight ?? 0;
+    const navHeight = document.getElementById("main-nav")?.offsetHeight ?? 0;
 
-    const top =
-      target.getBoundingClientRect().top + window.scrollY - navHeight;
+    const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
 
     window.scrollTo({ top, behavior: "smooth" });
   });

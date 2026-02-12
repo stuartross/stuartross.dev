@@ -28,7 +28,7 @@ function updateToggleLabel(button: HTMLButtonElement, theme: Theme): void {
 
 export function initThemeToggle(): void {
   const button = document.getElementById(
-    "theme-toggle",
+    "theme-toggle"
   ) as HTMLButtonElement | null;
   if (!button) return;
 
