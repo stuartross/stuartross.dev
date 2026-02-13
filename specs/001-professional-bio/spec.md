@@ -196,7 +196,7 @@ header, are clickable, and lead to the correct destinations.
 - No authentication or content management system is needed —
   the content is static and updated by editing source files
   directly.
-- No analytics or tracking is required for the initial version.
+- New Relic Browser (SPA agent) is used for real user monitoring.
 - The site will be hosted on a static hosting provider (e.g.,
   GitHub Pages, Netlify, Vercel) — no server-side processing
   is needed.
