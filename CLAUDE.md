@@ -36,6 +36,7 @@ npx playwright test -g "hero displays name"     # Run tests matching a pattern
 - **Never commit directly to `main`.** Always create a feature branch for changes.
 - Branch naming: use short, descriptive kebab-case names (e.g. `add-media-section`, `fix-nav-bug`).
 - When specs exist under `specs/`, update them to reflect any new or changed functionality.
+- **Before committing**, run `npm run format:check` and `npm run lint` locally. Fix any issues before pushing.
 
 ## Code Style
 
