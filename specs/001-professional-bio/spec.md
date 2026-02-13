@@ -154,6 +154,10 @@ header, are clickable, and lead to the correct destinations.
   (video case studies, conference talks, written case studies)
   with a type badge, title, description, and external link for
   each item.
+- **FR-014**: The page MUST include an Open Graph image meta tag
+  for social media link previews.
+- **FR-015**: The page MUST use a custom SVG favicon displaying
+  the owner's initials.
 
 ### Key Entities
 
