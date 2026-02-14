@@ -158,6 +158,10 @@ header, are clickable, and lead to the correct destinations.
   for social media link previews.
 - **FR-015**: The page MUST use a custom SVG favicon displaying
   the owner's initials.
+- **FR-016**: The page MUST include a JSON-LD structured data
+  block using the schema.org Person type, containing the owner's
+  name, job title, employer, site URL, profile image, social
+  profile links, and areas of expertise.
 
 ### Key Entities
 
